@@ -1,0 +1,20 @@
+/* index */
+/* Carta Perfil */
+.card-centered {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Ajusta esto según tus necesidades */
+}
+
+
+
+
+
+/* cv */
+/* Encabezado */
+.titulos {
+    text-align: center; 
+    text-decoration: underline;
+}
+
