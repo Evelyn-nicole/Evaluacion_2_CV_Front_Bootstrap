@@ -4,7 +4,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh; /* Ajusta esto según tus necesidades */
+    height: 100vh; 
 }
 
 
@@ -17,4 +17,21 @@
     text-align: center; 
     text-decoration: underline;
 }
+
+/* imagen carrusel hobbies */
+.image-hobbie{
+    width: 45rem ; 
+    height: auto; 
+}
+/* cv */
+/* barra nav y secciones*/
+.barra-navegador{
+    background: #f5ecef;
+}
+/* letra exterior tarjetas */
+.nombre{
+    font-family:cursive;
+}
+
+
 

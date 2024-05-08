@@ -1,91 +1,375 @@
+<!-- CURRICULUM -->
+
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Perfil Dr. Floki Sama</title>
+    <title>CV Dr. Floki Sama</title>
     <link rel="stylesheet" href="./styles.css">
     <script src="https://kit.fontawesome.com/7005a3ba8d.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
-    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+
+
+
+    <style>
+        body::after {
+            content: "";
+            background-image: url('images/image_fondo5.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            opacity: 0.2;
+            z-index: -1;
+            /* imagen se muestre en el fondo */
+        }
+    </style>
 </head>
+
 <body>
-    <div class="container mx-auto">
-<!-- Encabezado  -->
-        <div class="row">
+    <div class="container expand-lg border border-light-5rem p-0">
+
+        <!-- ENCABEZADO CON NOMBRE -->
+        <div class="row row  sticky-top">
             <div class="col">
                 <header id="navbar">
-                    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-                        <div class="nombre">
-                            <h1>DR. FLOKI SAMA</h1>
+                    <nav class="cv navbar navbar-expand-lg navbar-light justify-content-center bg-light">
+                        <div class="nombre mt-2 mb-2">
+                            <h2>DR. FLOKI SAMA</h2>
                         </div>
                     </nav>
                 </header>
             </div>
         </div>
-    
 
-<!-- Barra Lateral -->
-        <div class="row">
-            <div class="col-4">
-                <div class="card" style="width: 19rem;">
-                    <img src="images/image_lateral.jpg" class="card-img-top" alt="image lateral cv">
-                    <div class="card-body">
-                        <h4>
-                            Antecedentes Personales <i class="fas fa-address-card"></i>
-                        </h4>
-                        <ul>
-                            <li>
-                                <p>Edad: 7 años.</p>
-                            </li>
-                            <li>
-                                <p>Chip: 0000000087458.</p>
-                            </li>
-                            <li>
-                                <p>Raza: Pelo Corto.</p>
-                            </li>
-                            <li>
-                                <p>Colores: Gris, ojos verdes.</p>
-                            </li>
-                            <li>
-                                <p>Comuna: Ciudad Gatuna.</p>
-                            </li>
-                            <li>
-                                <p>Dirección: Calle Felinos #420.</p>
-                            </li>
-                            <li>
-                                <p>Humano Favorito: Karen Macho.</p>
-                            </li>
-                            <li>
-                                <p>Instagram:<a href="https://www.instagram.com/floki_sama?igsh=MWw5d25xZWNqeDk0Nw=="> Click para ver IG.</a></p>
-                            </li>
-                        </ul>
-                    </div>
-                  </div>
-            </div>
-
-
-<!-- Seccion Principal  -->
-            <div class="col">
-                <!-- Contenido principal -->
+        <!-- BARRA NAVEGACION 5 SECCIONES -->
+        <div class="container barra-navegador nombre">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <ul class="nav nav-tabs justify-content-center" id="myTab" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link active" id="sobre-mi-tab" data-toggle="tab" data-target="#sobre-mi"
+                                type="button" role="tab" aria-controls="sobre-mi" aria-selected="true">Sobre Mi</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="datos_personales-tab" data-toggle="tab"
+                                data-target="#datos_personales" type="button" role="tab"
+                                aria-controls="datos_personales" aria-selected="false">Datos Personales</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="estudios_grados-tab" data-toggle="tab"
+                                data-target="#estudios_grados" type="button" role="tab" aria-controls="estudios_grados"
+                                aria-selected="false">Estudios y Grados</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="experiencia_laboral-tab" data-toggle="tab"
+                                data-target="#experiencia_laboral" type="button" role="tab"
+                                aria-controls="experiencia_laboral" aria-selected="false">Experiencia Laboral</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="Hobbies-tab" data-toggle="tab" data-target="#Hobbies"
+                                type="button" role="tab" aria-controls="Hobbies" aria-selected="false">Hobbies</button>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </div>
 
 
-<!-- Footer -->
-        <div class="row">
-            <div class="col">
-                <!-- Contenido para el pie de página -->
+        <!-- CONTENIDO SECCION SOBRE MI -->
+        <div class="tab-content" id="myTabContent">
+            <div class="tab-pane fade show active" id="sobre-mi" role="tabpanel" aria-labelledby="sobre-mi-tab">
+                <h2 class="mt-4 text-center nombre">Sobre MÍ</h2>
+                <div class="row justify-content-center">
+                    <div class="card-deck">
+                        <div class="card card-descripcion" style="width: 23rem;">
+                            <img src="images/image_sobre_mi1.jpg" class="card-img-top img-fluid" alt="sobre_mi">
+                            <div class="card-body">
+                                <h5 class="card-title text-center nombre">Descripción</h5>
+                                <p class="card-text text-justify nombre">Soy Floki Sama, Dr. en Curar Almas. Me defino
+                                    como un
+                                    panzón con un amor insaciable por la comida y una devoción absoluta por la siesta.
+                                    Con mi pelaje gris y mis ojos verdes, soy el rey indiscutible de la casa. Mi pancita
+                                    es mi mayor atributo, ¡no hay abrazo más reconfortante que el mío! Dicen que
+                                    acariciarme es como abrazar un peluche vivo que cura el alma. Estoy en busca de un
+                                    trabajo que valore mi encanto felino y mi habilidad para encontrar la comodidad en
+                                    cualquier lugar.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- CONTENIDO DE LA PESTAÑA PERFIL -->
+            <div class="tab-pane fade" id="datos_personales" role="tabpanel" aria-labelledby="datos_personales-tab">
+                <h2 class="mt-4 text-center nombre">Antecedentes y Características Personales</h2>
+                <div class="row justify-content-center">
+                    <div class="col-md-10">
+                        <div class="card mb-3 bg-light">
+                            <div class="row no-gutters">
+                                <div class="col-md-4">
+                                    <img src="images/image_lateral.jpg" class="card-img img-fluid"
+                                        alt="image lateral cv">
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="card-body bg-light nombre">
+                                        <h5 class="card-title text-center">Datos Personales <i
+                                                class="fas fa-address-card"></i></h5>
+                                        <br>
+                                        <ul>
+                                            <li>
+                                                <h6>Edad:8 años.</h6>
+                                            </li>
+                                            <li>
+                                                <h6>Chip: 0000000087458.</h6>
+                                            </li>
+                                            <li>
+                                                <h6>Raza: Pelo Corto.</h6>
+                                            </li>
+                                            <li>
+                                                <h6>Colores: Gris, ojos verdes.</h6>
+                                            </li>
+                                            <li>
+                                                <h6>Comuna: Ciudad Gatuna.</h6>
+                                            </li>
+                                            <li>
+                                                <h6>Dirección: Calle Felinos #420.</h6>
+                                            </li>
+                                            <li>
+                                                <h6>Humano Favorito: Karen Macho.</h6>
+                                            </li>
+                                            <li>
+                                                <h6>Instagram:<a
+                                                        href="https://www.instagram.com/floki_sama?igsh=MWw5d25xZWNqeDk0Nw==">
+                                                        Click para ver IG.</a></h6>
+                                            </li>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card mb-3">
+                            <div class="card-body bg-light nombre">
+                                <h5 class="card-title">Características</h5>
+                                <div class="progress">
+                                    <div class="progress-bar bg-danger text-white progress-bar-striped progress-bar-animated"
+                                        role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"
+                                        style="width: 10%"> 10%</div>
+                                </div>
+                                <p class="card-text">Amistoso.</p>
+                                <div class="progress">
+                                    <div class="progress-bar bg-warning text-white progress-bar-striped progress-bar-animated"
+                                        role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"
+                                        style="width: 35%">35%</div>
+                                </div>
+                                <p class="card-text">Cazador.</p>
+                                <div class="progress">
+                                    <div class="progress-bar  text-white progress-bar-striped progress-bar-animated"
+                                        role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"
+                                        style="width: 85%">85%</div>
+                                </div>
+                                <p class="card-text">Siestas.</p>
+                                <div class="progress">
+                                    <div class="progress-bar bg-success text-white progress-bar-striped progress-bar-animated"
+                                        role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"
+                                        style="width: 100%">100%</div>
+                                </div>
+                                <p class="card-text">Apetito.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CONTENIDO DE LA PESTAÑA ESTUDIOS Y GRADOS -->
+            <div class="tab-pane fade" id="estudios_grados" role="tabpanel" aria-labelledby="estudios_grados-tab">
+                <h2 class="mt-4 text-center nombre">Estudios y Grados</h2>
+                <div class="row justify-content-center">
+                    <div class="col-md-10">
+                        <div class="card-body bg-light mt-4 nombre">
+                            <ul class="list-unstyled">
+                                <li class="media">
+                                    <img src="images/image_uni1.jpg" class="mr-3" alt="...">
+                                    <div class="media-body">
+                                        <h5 class="mt-0 mb-1">Escuela de Rascadores "Garra y Colmillo" (2018):</h5>
+                                        <p class="text-justify">Certificado en el arte del rascado de muebles y postes
+                                            para
+                                            gatos. Aprendí las técnicas más efectivas para mantener mis garras afiladas
+                                            y mi
+                                            territorio seguro.</p>
+                                    </div>
+                                </li>
+                                <li class="media my-4">
+                                    <img src="images/image_uni2.jpg" class="mr-3" alt="...">
+                                    <div class="media-body">
+                                        <h5 class="mt-0 mb-1">Universidad de Siestas "Ronroneo y Descanso" (2020):</h5>
+                                        <p class="text-justify">Magister en la ciencia de la siesta. Aprendí a dominar
+                                            la
+                                            habilidad de dormir en cualquier lugar y en cualquier momento, manteniendo
+                                            siempre
+                                            un oído alerta ante posibles peligros</p>
+                                    </div>
+                                </li>
+                                <li class="media">
+                                    <img src="images/image_uni3.jpg" class="mr-3" alt="...">
+                                    <div class="media-body">
+                                        <h5 class="mt-0 mb-1"> Universidad de Ronroneo y Felicidad "Garritas
+                                            Reconfortantes"
+                                            (2022): </h5>
+                                        <p class="text-justify">Doctorado en Curar el Alma. Graduado con honores.
+                                            Especializado
+                                            en brindar amor incondicional, consuelo y felicidad a mis humanos a través
+                                            de
+                                            ronroneos reconfortantes y miradas tiernas. Dominio en la técnica de
+                                            acurrucarse en
+                                            los momentos de necesidad y ser un compañero leal en todas las situaciones.
+                                        </p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- CONTENIDO DE LA PESTAÑA EXPERIENCIA LABORAL -->
+            <div class="tab-pane fade" id="experiencia_laboral" role="tabpanel"
+                aria-labelledby="experiencia_laboral-tab">
+                <h2 class="mt-4 text-center nombre">Experiencia Laboral</h2>
+                <div class="container">
+                    <div class="row justify-content-center nombre">
+                        <div class="col-md-10">
+                            <div class="card-deck">
+                                <div class="card mb-4 ">
+                                    <img src="images/image_modelo.jpg" class="card-img-top img-fluid"
+                                        alt="Modelo e Influencer">
+                                    <div class="card-body">
+                                        <h5 class="card-title text-center">MODELO E INFLUENCER</h5>
+                                        <p class="card-text text-justify"> Influencer y modelo, desde que era un gatito
+                                            pequeño, siempre supe que tenía algo especial que compartir con el mundo.
+                                            Con mi pelaje gris impecable y mis ojos verde esmeralda hipnotizan a
+                                            cualquiera, he colaborado con marcas de renombre, mostrando su último equipo
+                                            para gatos o modelando elegantes collares y correas.</p>
+                                        <p class="card-text"><small class="text-muted">Desde el año 2016 - 2020</small>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="card mb-4">
+                                    <img src="images/image_catador_premios.JPG" class="card-img-top img-fluid"
+                                        alt="Catador de Premios">
+                                    <div class="card-body">
+                                        <h5 class="card-title text-center">CATADOR DE PREMIOS</h5>
+                                        <p class="card-text text-justify">Mi paladar refinado puede distinguir entre las
+                                            delicias más exquisitas y las comidas mediocres para gatos. Desde croquetas
+                                            crujientes hasta suaves patés, he probado todo tipo de manjares felinos. Mi
+                                            lengua experta puede detectar los sabores más sutiles y mi nariz siempre
+                                            está alerta ante nuevos aromas.</p>
+                                        <p class="card-text"><small class="text-muted">Desde el año 2016 - 2023</small>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="card mb-4">
+                                    <img src="images/image_catador_sillones.jpg" class="card-img-top img-fluid"
+                                        alt="Catador de sillones">
+                                    <div class="card-body">
+                                        <h5 class="card-title text-center">CATADOR DE SILLONES</h5>
+                                        <p class="card-text text-justify">Experto en comodidad de sillones. Soy el rey
+                                            del relax, el sabelotodo del descanso. Desde el momento en que entro en una
+                                            habitación, sé exactamente dónde está el mejor lugar para echar una siesta.
+                                            Ya sea un sofá mullido o un sillón reclinable, estoy siempre listo para
+                                            probar su comodidad.</p>
+                                        <br>
+                                        <p class="card-text"><small class="text-muted">Desde el año 2016 -
+                                                Actualidad</small></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CONTENIDO DE LA PESTAÑA HOBBIES -->
+            <div class="tab-pane fade" id="Hobbies" role="tabpanel" aria-labelledby="Hobbies-tab">
+                <h2 class="mt-4 text-center nombre">Hobbies</h2>
+                <div class="mb-5">
+                    <div class="row justify-content-center nombre ">
+                        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                            <ol class="carousel-indicators">
+                                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                            </ol>
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="images/image_hobbie1.jpg" class="image-hobbie d-block img-fluid" alt="">>
+                                    <div class="carousel-caption">
+                                        <h3>SENTIR LA NATURALEZA</h3>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="images/image_hobbie2.jpg" class="image-hobbie d-block img-fluid"
+                                        alt="...">
+                                    <div class="carousel-caption">
+                                        <h3>DESCANSAR EN MI RASCADOR</h3>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="images/image_hobbie3.JPG" class="image-hobbie d-block img-fluid"
+                                        alt="...">
+                                    <div class="carousel-caption">
+                                        <h3>TOMAR SOL</h3>
+                                    </div>
+                                </div>
+                            </div>
+                            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button"
+                                data-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Previous</span>
+                            </a>
+                            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button"
+                                data-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Next</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- FOOTER -->
+            <div class="card-body mt-4 p-0">
+                <footer class="cv navbar navbar-expand-lg navbar-dark bg-light nombre">
+                    <div class="container">
+                        <span class="navbar-text text-dark nombre">
+                            <h5>Visita el Repositorio Gatuno en GitHub.</h5>
+                            <a class="text-dark nombre"
+                                href="https://github.com/Evelyn-nicole/Evaluacion_2_CV_Front_Bootstrap.git">Ver
+                                Repositorio Aquí.</a>
+                        </span>
+                    </div>
+                </footer>
             </div>
         </div>
     </div>
 
 
 
-
-    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>
-
-
